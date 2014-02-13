@@ -186,6 +186,10 @@ static int rssi = 0;
     
     [NSTimer scheduledTimerWithTimeInterval:(float)timeout target:self selector:@selector(scanTimer:) userInfo:nil repeats:NO];
     
+    UIAlertView *myAlert = [[UIAlertView alloc] initWithTitle:@"findBLEPeripherals: UUID" message:@BLE_DEVICE_SERVICE_UUID delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+    
+    [myAlert show];
+    
 #if TARGET_OS_IPHONE
     [self.CM scanForPeripheralsWithServices:[NSArray arrayWithObject:[CBUUID UUIDWithString:@BLE_DEVICE_SERVICE_UUID]] options:nil];
 #else

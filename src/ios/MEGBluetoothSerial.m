@@ -47,6 +47,11 @@
     // if the uuid is null or blank, scan and
     // connect to the first available device
 
+    
+    UIAlertView *myAlert = [[UIAlertView alloc] initWithTitle:@"connect: UUID" message:uuid delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+    
+    [myAlert show];
+    
     if (uuid == (NSString*)[NSNull null]) {
         [self connectToFirstDevice];
     } else if ([uuid isEqualToString:@""]) {
