@@ -29,6 +29,9 @@
 
     [super pluginInitialize];
     
+    UIAlertView *myAlert = [[UIAlertView alloc] initWithTitle:@"tester" message:@"test" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+    [myAlert show];
+    
     _bleShield = [[BLE alloc] init];
     [_bleShield controlSetup:1];
     [_bleShield setDelegate:self];
