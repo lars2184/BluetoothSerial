@@ -43,6 +43,7 @@
 
 - (void)connect:(CDVInvokedUrlCommand *)command {
     
+    /*
     NSLog(@"connect");
     CDVPluginResult *pluginResult = nil;
     NSString *uuid = [command.arguments objectAtIndex:0];
@@ -67,6 +68,7 @@
     [pluginResult setKeepCallbackAsBool:TRUE];
     _connectCallbackId = [command.callbackId copy];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+     */
 }
 
 - (void)disconnect:(CDVInvokedUrlCommand*)command {
