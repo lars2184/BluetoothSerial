@@ -12,7 +12,7 @@
  */
 
 // BLE Device Service
-#define BLE_DEVICE_SERVICE_UUID                         "713D0000-503E-4C75-BA94-3148F18D941E"
+#define BLE_DEVICE_SERVICE_UUID                         "F000AA00-0451-4000-B000-000000000000"
 
 #define BLE_DEVICE_VENDOR_NAME_UUID                     "713D0001-503E-4C75-BA94-3148F18D941E"
 
